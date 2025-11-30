@@ -1,25 +1,71 @@
-# 1. Remove node_modules from Git tracking (if mistakenly added)
-```git rm -r --cached node_modules```
+## 🚀 Git Repository Setup & Cleanup Guide
 
-# 2. Re-add everything except ignored files
-```git add .```
+If you accidentally committed `node_modules` or are preparing your project for the first push, follow these steps to clean the repo and set it up correctly.
 
-# 3. Commit changes
-```git commit -m "Clean repo by removing node_modules and updating .gitignore"```
+---
 
-# 4. Update .gitignore (manual edit)
-```# (No command — you edited the file)```
+### **📦 1. Remove `node_modules` from Git tracking**
 
-# 5. Stage updated .gitignore and other changes
-```git add .gitignore```
-```git add .```
+```bash
+git rm -r --cached node_modules
+```
 
-# 6. Create initial commit (if not created earlier)
-```git commit -m "Initial project setup with folder structure, charts, utilities, assets and improved README"```
+---
 
-# 7. Add remote GitHub repo
-```git remote add origin <your-repo-url>```
+### **📁 2. Re-add all files except ignored ones**
 
-# 8. Push to main branch
-```git branch -M main```
-```git push -u origin main```
+```bash
+git add .
+```
+
+---
+
+### **🧹 3. Commit cleanup changes**
+
+```bash
+git commit -m "Clean repo by removing node_modules and updating .gitignore"
+```
+
+---
+
+### **✏️ 4. Update `.gitignore`**
+
+Manually edit your `.gitignore` file to ensure unwanted files/folders are excluded.
+
+*No command required.*
+
+---
+
+### **📜 5. Stage the updated `.gitignore` and other files**
+
+```bash
+git add .gitignore
+git add .
+```
+
+---
+
+### **📌 6. Create initial commit (if not created earlier)**
+
+```bash
+git commit -m "Initial project setup with folder structure, charts, utilities, assets and improved README"
+```
+
+---
+
+### **🌐 7. Add remote GitHub repository**
+
+```bash
+git remote add origin <your-repo-url>
+```
+
+---
+
+### **⬆️ 8. Push to the `main` branch**
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+---
